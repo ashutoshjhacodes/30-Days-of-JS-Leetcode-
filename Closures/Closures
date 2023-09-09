@@ -1,0 +1,13 @@
+Closure is formed when functions are bundled with their lexical environment. Meaning inner function has access to the varibales and params of their outer or parent function.
+
+example:
+
+function outer(a){ //1
+    function inner(b) //2
+        function innermost(c) //3
+              console.log(a+b+c);  // 6
+}
+
+Advantages:
+1. currying
+2. memoize
